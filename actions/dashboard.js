@@ -69,7 +69,7 @@ export async function createAccount(data) {
   }
 }
 
-export async function getUserACcounts() {
+export async function getUserAccounts() {
   const { userId } = await auth();
   if (!userId) throw new Error("Unauthorized");
 
